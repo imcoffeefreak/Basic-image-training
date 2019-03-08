@@ -9,14 +9,14 @@
 ### How to run
 
 #### This is to train the images
-```python
+```terminal
 
 python train_network.py --dataset images --model Model.model
 
 ```
 
 #### This is to test the images
-```python
+```terminal
 
 python test_network.py --model Model.model --image test_samples/Imagename.jpg
 
