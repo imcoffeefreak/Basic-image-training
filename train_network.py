@@ -42,7 +42,7 @@ for imagePath in imagePaths:
 	image = img_to_array(image)
 	data.append(image)
 	label = imagePath.split(os.path.sep)[-2]
-	label = 1 if label == "needed_img" else 0
+	label = 1 if label == "cat" else 0
 	labels.append(label)
 
 data = np.array(data, dtype="float") / 255.0

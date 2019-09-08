@@ -21,3 +21,10 @@ python train_network.py --dataset images --model Model.model
 python test_network.py --model Model.model --image test_samples/Imagename.jpg
 
 ```
+
+#### Install the packages 
+
+```terminal
+pip3 install -r requirements.txt
+
+```

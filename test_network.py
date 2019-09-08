@@ -29,10 +29,10 @@ image = np.expand_dims(image, axis=0)
 
 model = load_model(args["model"])
 
-(not_needed_img, needed_img) = model.predict(image)[0]
+(not_cat, cat) = model.predict(image)[0]
 
-label = "needed_img" if needed_img > not_needed_img else "not_needed_img"
-proba = needed_img if needed_img > not_needed_img else not_needed_img
+label = "cat" if cat > not_cat else "not_cat"
+proba = cat if cat > not_cat else not_cat
 label = "{}: {:.2f}%".format(label, proba * 100)
 
 output = imutils.resize(orig, width=400)
